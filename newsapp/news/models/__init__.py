@@ -1,0 +1,1 @@
+from news.models.register import User

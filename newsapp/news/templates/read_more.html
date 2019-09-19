@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block content %}
+	<div class="jumbotron">
+		<h1>{{ response.title }}</h1>
+		<div class="row mt-5">
+			<div class="col-sm-4">
+				<img src="{{ response.urlToImage }}" alt="News-image" style="width: 300px">
+			</div>
+			<div class="col-sm-8">
+				<p>{{ response.content }}</p>
+				<div class="d-flex justify-content-between mt-5">
+					<div>
+						{{ response.author }}
+					</div>
+					<div>
+						{{ response.publishedAt }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
